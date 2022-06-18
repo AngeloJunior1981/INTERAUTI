@@ -1,0 +1,10 @@
+^C:\USERS\RAFAEL VELOSO\DOCUMENTS\TEA-MAIN\BUILD\WINDOWS\CMAKEFILES\7C34AFCB878C338A8F8AEDA92FA89EE5\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

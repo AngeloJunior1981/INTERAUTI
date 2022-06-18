@@ -1,0 +1,28 @@
+^C:\USERS\RAFAEL VELOSO\DOCUMENTS\TEA-MAIN\BUILD\WINDOWS\CMAKEFILES\919F67CD15BF78AC455D7319583E0C8C\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=c:\development\flutter "PROJECT_DIR=C:\Users\Rafael Veloso\Documents\tea-main" FLUTTER_ROOT=c:\development\flutter "FLUTTER_EPHEMERAL_DIR=C:\Users\Rafael Veloso\Documents\tea-main\windows\flutter\ephemeral" "PROJECT_DIR=C:\Users\Rafael Veloso\Documents\tea-main" "FLUTTER_TARGET=C:\Users\Rafael Veloso\Documents\tea-main\lib\main.dart" DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false "PACKAGE_CONFIG=C:\Users\Rafael Veloso\Documents\tea-main\.dart_tool\package_config.json" c:/development/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\RAFAEL VELOSO\DOCUMENTS\TEA-MAIN\BUILD\WINDOWS\CMAKEFILES\A4198CFFF58ED1D02B337A6E6FC5F363\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\RAFAEL VELOSO\DOCUMENTS\TEA-MAIN\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/Rafael Veloso/Documents/tea-main/windows" "-BC:/Users/Rafael Veloso/Documents/tea-main/build/windows" --check-stamp-file "C:/Users/Rafael Veloso/Documents/tea-main/build/windows/flutter/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

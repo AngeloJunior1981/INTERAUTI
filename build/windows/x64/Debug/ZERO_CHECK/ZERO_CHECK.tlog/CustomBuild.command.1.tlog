@@ -1,0 +1,10 @@
+^C:\USERS\RAFAEL VELOSO\DOCUMENTS\TEA-MAIN\BUILD\WINDOWS\CMAKEFILES\7C34AFCB878C338A8F8AEDA92FA89EE5\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/Rafael Veloso/Documents/tea-main/windows" "-BC:/Users/Rafael Veloso/Documents/tea-main/build/windows" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Rafael Veloso/Documents/tea-main/build/windows/tea.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
